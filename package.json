@@ -1,0 +1,14 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lich0020/mad9135-f19-h3-jest.git",
+  "author": "Jeff Lichty <lich0020@algonquinlive.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+}
+}
