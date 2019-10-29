@@ -57,9 +57,9 @@ describe('Robot module', () => {
 
 
         // 6. Test that report.facing is one of: NORTH, SOUTH, EAST, or WEST.
-        // test('testing that report.facing is one of: NORTH, SOUTH, EAST, WEST', async () => {
-        //   expect(report.facing).toEqual([expect.stringContaining('NORTH')])
-        //   })
+        test('testing that report.facing is one of: NORTH, SOUTH, EAST, WEST', async () => {
+          expect(report.facing).toMatch('NORTH', "SOUTH", "EAST", "WEST")
+          })
 
     })
 })
