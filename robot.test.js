@@ -33,9 +33,12 @@ describe('Robot module', () => {
         const report = result[1]; 
 
         // 3. Test that report contains the properties: action, x, y, and facing.
-        // test('testing that report to contain properties: action, x,y,facing', async () => {
-        //   expect(report).toEqual(expect.arrayContaining(['Alice', 'Bob']))
-        // }
+        test('testing that report to contain properties: action, x,y,facing', async () => {
+          expect(report).toHaveProperty('action')
+          expect(report).toHaveProperty('x')
+          expect(report).toHaveProperty('y')
+          expect(report).toHaveProperty('facing')
+        })
 
         // 4. Test that report.x is a number between 0 and 5.
         test('testing that result.x between 0 and 5', async () => {
